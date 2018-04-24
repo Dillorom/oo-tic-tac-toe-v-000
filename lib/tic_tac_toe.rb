@@ -81,7 +81,7 @@ class TicTacToe
       position_2 = board[win_combination[1]]
       position_3 = board[win_combination[2]]
 
-      position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_combination[0])
+      position_1 == position_2 && position_2 == position_3 && position_taken?(win_combination[0])
       end
   end
 

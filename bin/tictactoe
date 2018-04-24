@@ -1,4 +1,3 @@
 
 tic_tac_toe = TicTacToe.new("First Game")
 play
-

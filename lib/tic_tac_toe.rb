@@ -77,16 +77,16 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.detect do |win_combination|
-      position_1 = board[win_combination[0]]
-      position_2 = board[win_combination[1]]
-      position_3 = board[win_combination[2]]
+      position_1 = @board[win_combination[0]]
+      position_2 = @board[win_combination[1]]
+      position_3 = @board[win_combination[2]]
 
       position_1 == position_2 && position_2 == position_3 && position_taken?(win_combination[0])
       end
   end
 
   def full?
-    board.all? do |position|
+    @board.all? do |position|
       position == "X" || position == "O"
     end
   end
@@ -103,7 +103,7 @@ class TicTacToe
 
   def winner
     if won?
-      board[won?[0]]
+      @board[won?[0]]
     end
   end
 
@@ -113,7 +113,7 @@ class TicTacToe
     end
 
       if won?
-       puts "Congratulations #{winner(board)}!"
+       puts "Congratulations #{winner}!"
       elsif draw?
        puts "Cat's Game!"
    end

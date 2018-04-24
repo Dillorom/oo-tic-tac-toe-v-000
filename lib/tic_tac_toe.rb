@@ -52,11 +52,9 @@ class TicTacToe
     users_input=gets.strip
     index = input_to_index(users_input)
     if valid_move?(board, index)
-  <<<<<<< HEAD
+  
       move(board, index, current_player(board))
-  =======
-      move(board, index, player_character ="X")
-  >>>>>>> fbdcfddebea01753e2e149aca817fc7076660ee9
+
       display_board
     else turn
     end
@@ -122,5 +120,5 @@ class TicTacToe
        puts "Cat's Game!"
    end
 
-  
+
 end

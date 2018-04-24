@@ -52,7 +52,7 @@ class TicTacToe
     users_input=gets.strip
     index = input_to_index(users_input)
     if valid_move?(board, index)
-  
+
       move(board, index, current_player(board))
 
       display_board
@@ -119,6 +119,4 @@ class TicTacToe
       elsif draw?
        puts "Cat's Game!"
    end
-
-
 end
